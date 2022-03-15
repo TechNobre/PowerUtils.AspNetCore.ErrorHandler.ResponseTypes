@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.project", "1.project", "{CE044FF1-BA3F-4229-B891-ABDB23817993}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		CHANGELOG.md = CHANGELOG.md
+		global.json = global.json
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.cicd", "2.cicd", "{D0E7B389-76B5-40A7-8583-A9E72D2D48AB}"
+	ProjectSection(SolutionItems) = preProject
+		.github\dependabot.yml = .github\dependabot.yml
+		.github\workflows\publish-nuget.yml = .github\workflows\publish-nuget.yml
+		.github\workflows\sonarcloud.yml = .github\workflows\sonarcloud.yml
+		.github\workflows\test-project.yml = .github\workflows\test-project.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.src", "3.src", "{6E23ADF0-4266-46A8-878B-8A41A15E8A67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.tests", "4.tests", "{C32996E7-9E94-490F-9196-9D166379FA2A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerUtils.AspNetCore.ErrorHandler.ResponseTypes", "src\PowerUtils.AspNetCore.ErrorHandler.ResponseTypes.csproj", "{976607B8-D23C-4691-A465-20EC9F5C3FAA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerUtils.AspNetCore.ErrorHandler.ResponseTypes.Tests", "tests\PowerUtils.AspNetCore.ErrorHandler.ResponseTypes.Tests\PowerUtils.AspNetCore.ErrorHandler.ResponseTypes.Tests.csproj", "{CB1C4C48-F971-43AA-A154-287333EF6712}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{976607B8-D23C-4691-A465-20EC9F5C3FAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{976607B8-D23C-4691-A465-20EC9F5C3FAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{976607B8-D23C-4691-A465-20EC9F5C3FAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{976607B8-D23C-4691-A465-20EC9F5C3FAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB1C4C48-F971-43AA-A154-287333EF6712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB1C4C48-F971-43AA-A154-287333EF6712}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB1C4C48-F971-43AA-A154-287333EF6712}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB1C4C48-F971-43AA-A154-287333EF6712}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{976607B8-D23C-4691-A465-20EC9F5C3FAA} = {6E23ADF0-4266-46A8-878B-8A41A15E8A67}
+		{CB1C4C48-F971-43AA-A154-287333EF6712} = {C32996E7-9E94-490F-9196-9D166379FA2A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB225477-AC3D-47A9-8F0D-A52866D30541}
+	EndGlobalSection
+EndGlobal
