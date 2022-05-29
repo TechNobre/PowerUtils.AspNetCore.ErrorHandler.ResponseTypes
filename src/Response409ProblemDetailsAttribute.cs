@@ -4,6 +4,9 @@ using PowerUtils.AspNetCore.ErrorHandler;
 
 namespace PowerUtils.AspNetCore.Attributes
 {
+    /// <summary>
+    /// Problem details response with status code 409 (Conflict)
+    /// </summary>
     public class Response409ProblemDetailsAttribute : ProducesResponseTypeAttribute
     {
         public Response409ProblemDetailsAttribute() : base(typeof(ProblemDetailsResponse), StatusCodes.Status409Conflict) { }

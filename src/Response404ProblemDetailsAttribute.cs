@@ -4,6 +4,9 @@ using PowerUtils.AspNetCore.ErrorHandler;
 
 namespace PowerUtils.AspNetCore.Attributes
 {
+    /// <summary>
+    /// Problem details response with status code 404 (NotFound)
+    /// </summary>
     public class Response404ProblemDetailsAttribute : ProducesResponseTypeAttribute
     {
         public Response404ProblemDetailsAttribute() : base(typeof(ProblemDetailsResponse), StatusCodes.Status404NotFound) { }

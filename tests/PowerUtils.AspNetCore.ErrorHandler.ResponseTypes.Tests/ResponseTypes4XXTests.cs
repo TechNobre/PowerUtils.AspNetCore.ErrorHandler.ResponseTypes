@@ -80,6 +80,21 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
+    public void Constructor_Response413ProblemDetailsAttribute()
+    {
+        // Arrange && Act
+        var act = new Response413ProblemDetailsAttribute();
+
+
+        // Assert
+        act.StatusCode.Should()
+            .Be(413);
+
+        act.Type.Should()
+            .Be(typeof(ProblemDetailsResponse));
+    }
+
+    [Fact]
     public void Constructor_Response415ProblemDetailsAttribute()
     {
         // Arrange && Act
