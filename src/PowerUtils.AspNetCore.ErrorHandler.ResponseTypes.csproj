@@ -3,6 +3,8 @@
   <PropertyGroup>
     <ProjectGuid>1d1e25dd-40ce-42e8-80b8-ea44fad54efc</ProjectGuid>
 
+    <CurrentYear>$([System.DateTime]::UtcNow.ToString(yyyy))</CurrentYear>
+
 
     <!-- Assembly and projecto details -->
     <!-- https://docs.microsoft.com/en-us/dotnet/standard/frameworks -->
@@ -21,12 +23,10 @@
 
     <License>MIT</License>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <Copyright>Copyright © 2022 by TechNobre</Copyright>
+    <Copyright>Copyright © $(CurrentYear) by TechNobre</Copyright>
 
     <Description>Extensions to standardize ResponseType attributes with ProblemDetails</Description>
-    <PackageReleaseNotes>
-      Kickoff
-    </PackageReleaseNotes>
+    <PackageReleaseNotes>https://github.com/TechNobre/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes/blob/main/CHANGELOG.md</PackageReleaseNotes>
     <Summary>Extensions to standardize ResponseType attributes with ProblemDetails</Summary>
     <PackageTags>PowerUtils;Utils;Helpers;Attributes;ResponseTypes;Extension;Extensions;AspNetCore;ProblemDetails</PackageTags>
     <RepositoryUrl>https://github.com/TechNobre/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes</RepositoryUrl>
@@ -58,20 +58,9 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <DefineConstants>RELEASE;TRACE</DefineConstants>
+    <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>none</ErrorReport>
     <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-
-
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.1' ">
-    <DefineConstants>NETCOREAPP;NETCOREAPP3_1</DefineConstants>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'net5.0' ">
-    <DefineConstants>NET;NET5</DefineConstants>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'net6.0' ">
-    <DefineConstants>NET;NET6</DefineConstants>
   </PropertyGroup>
 
 
