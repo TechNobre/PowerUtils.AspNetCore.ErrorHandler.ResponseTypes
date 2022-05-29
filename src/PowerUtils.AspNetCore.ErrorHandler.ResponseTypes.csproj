@@ -16,7 +16,7 @@
     <PackageId>PowerUtils.AspNetCore.ErrorHandler.ResponseTypes</PackageId>
     <title>PowerUtils.AspNetCore.ErrorHandler.ResponseTypes</title>
     <Product>PowerUtils.AspNetCore.ErrorHandler.ResponseTypes</Product>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
 
     <Authors>Nelson Nobre</Authors>
     <Company>TechNobre</Company>
