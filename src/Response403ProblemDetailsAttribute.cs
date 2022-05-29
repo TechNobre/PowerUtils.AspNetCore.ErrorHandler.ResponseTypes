@@ -4,6 +4,9 @@ using PowerUtils.AspNetCore.ErrorHandler;
 
 namespace PowerUtils.AspNetCore.Attributes
 {
+    /// <summary>
+    /// Problem details response with status code 403 (Forbidden)
+    /// </summary>
     public class Response403ProblemDetailsAttribute : ProducesResponseTypeAttribute
     {
         public Response403ProblemDetailsAttribute() : base(typeof(ProblemDetailsResponse), StatusCodes.Status403Forbidden) { }
