@@ -1,5 +1,8 @@
 # PowerUtils.AspNetCore.ErrorHandler.ResponseTypes
-Extensions to standardize ResponseType attributes with ProblemDetails
+
+![Logo](https://raw.githubusercontent.com/TechNobre/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes/main/assets/logo/logo_128x128.png)
+
+***Extensions to standardize ResponseType attributes with ProblemDetails***
 
 ![Tests](https://github.com/TechNobre/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes/actions/workflows/test-project.yml/badge.svg)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=TechNobre_PowerUtils.AspNetCore.ErrorHandler.ResponseTypes&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=TechNobre_PowerUtils.AspNetCore.ErrorHandler.ResponseTypes)
@@ -10,31 +13,34 @@ Extensions to standardize ResponseType attributes with ProblemDetails
 [![License: MIT](https://img.shields.io/github/license/TechNobre/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes.svg)](https://github.com/TechNobre/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes/blob/main/LICENSE)
 
 
+- [Support](#support-to)
+- [Dependencies](#dependencies)
+- [How to use](#how-to-use)
+  - [Install NuGet package](#Installation)
+  - [Attributes](#Attributes)
+- [Contribution](#contribution)
+- [License](./LICENSE)
+- [Changelog](./CHANGELOG.md)
 
-## Support to
-- .NET 3.1
-- .NET 5.0
+
+
+## Support to <a name="support-to"></a>
 - .NET 6.0
+- .NET 5.0
+- .NET 3.1
 
 
 
-## Features
-
-- [Installation](#Installation)
-- [Attributes](#Attributes)
-
-
-## Documentation
-
-### Dependencies
+## Dependencies <a name="dependencies"></a>
 
 - Microsoft.AspNetCore.Mvc.Core [NuGet](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Core/)
 - PowerUtils.AspNetCore.ErrorHandler [NuGet](https://www.nuget.org/packages/PowerUtils.AspNetCore.ErrorHandler/)
 
 
-### How to use
 
-#### Install NuGet package <a name="Installation"></a>
+## How to use <a name="how-to-use"></a>
+
+### Install NuGet package <a name="Installation"></a>
 This package is available through Nuget Packages: https://www.nuget.org/packages/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes
 
 **Nuget**
@@ -50,29 +56,15 @@ dotnet add package PowerUtils.AspNetCore.ErrorHandler.ResponseTypes
 
 
 ### Attributes <a name="Attributes"></a>
-- `Response400ProblemDetailsAttribute`;
-- `Response401ProblemDetailsAttribute`;
-- `Response403ProblemDetailsAttribute`;
-- `Response404ProblemDetailsAttribute`;
-- `Response409ProblemDetailsAttribute`;
-- `Response415ProblemDetailsAttribute`;
+- `Response400ProblemDetailsAttribute`
+- `Response401ProblemDetailsAttribute`
+- `Response403ProblemDetailsAttribute`
+- `Response404ProblemDetailsAttribute`
+- `Response409ProblemDetailsAttribute`
+- `Response415ProblemDetailsAttribute`
 
 
 
-## Contribution
+## Contribution <a name="contribution"></a>
 
-*Help me to help others*
-
-
-
-
-## LICENSE
-
-[MIT](https://github.com/TechNobre/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes/blob/main/LICENSE)
-
-
-
-
-## Changelog
-
-[Here](./CHANGELOG.md)
+If you have any questions, comments, or suggestions, please open an [issue](https://github.com/TechNobre/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes/issues/new/choose) or create a [pull request](https://github.com/TechNobre/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes/compare)
