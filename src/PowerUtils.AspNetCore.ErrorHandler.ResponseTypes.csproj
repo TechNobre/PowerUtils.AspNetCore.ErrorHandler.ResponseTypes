@@ -39,6 +39,8 @@
     <PackageProjectUrl>https://github.com/TechNobre/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes</PackageProjectUrl>
     <NeutralLanguage>en-GB</NeutralLanguage>
 
+    <PackageIcon>logo_128x128.png</PackageIcon>
+    
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/TechNobre/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes</RepositoryUrl>
   </PropertyGroup>
@@ -61,6 +63,7 @@
 
 
   <ItemGroup Condition="'$(Configuration)'=='Release'">
+    <None Include="..\assets\logo\logo_128x128.png" Pack="true" PackagePath="" />
     <None Include="..\LICENSE" Pack="true" PackagePath="" />
   </ItemGroup>
 
