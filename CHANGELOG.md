@@ -1,10 +1,4 @@
-# Changelog
-
-
-
-
-## [1.1.0] - 2022-05-29
-[Full Changelog](https://github.com/TechNobre/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes/compare/v1.0.0...v1.1.0)
+# [1.1.0](https://github.com/TechNobre/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes/compare/v1.0.0...v1.1.0) (2022-05-29)
 
 
 ### New Features
@@ -14,7 +8,7 @@
 
 
 
-## [1.0.0] - 2022-03-15
+# 1.0.0 (2022-03-15)
 
 - Kickoff;
 - Moved the attributes from [PowerUtils.AspNetCore.WebAPI](https://github.com/TechNobre/PowerUtils.AspNetCore.WebAPI) project to this one so it can be used individually;
