@@ -1,22 +1,30 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <!-- Assembly details -->
   <PropertyGroup>
     <ProjectGuid>1d1e25dd-40ce-42e8-80b8-ea44fad54efc</ProjectGuid>
-
-    <CurrentYear>$([System.DateTime]::UtcNow.ToString(yyyy))</CurrentYear>
-
 
     <!-- Assembly and projecto details -->
     <!-- https://docs.microsoft.com/en-us/dotnet/standard/frameworks -->
     <TargetFrameworks>net6.0;net5.0;netcoreapp3.1</TargetFrameworks>
+
+
     <AssemblyName>PowerUtils.AspNetCore.ErrorHandler.ResponseTypes</AssemblyName>
     <RootNamespace>PowerUtils.AspNetCore.Attributes</RootNamespace>
 
-    <!-- Package details -->
+    <Version>1.1.0</Version>
+
+    <PackageOutputPath>bin\</PackageOutputPath>
+  </PropertyGroup>
+
+  
+  <!-- Package details -->
+  <PropertyGroup>
+    <CurrentYear>$([System.DateTime]::UtcNow.ToString(yyyy))</CurrentYear>
+    
     <PackageId>PowerUtils.AspNetCore.ErrorHandler.ResponseTypes</PackageId>
     <title>PowerUtils.AspNetCore.ErrorHandler.ResponseTypes</title>
     <Product>PowerUtils.AspNetCore.ErrorHandler.ResponseTypes</Product>
-    <Version>1.1.0</Version>
 
     <Authors>Nelson Nobre</Authors>
     <Company>TechNobre</Company>
@@ -26,14 +34,13 @@
     <Copyright>Copyright © $(CurrentYear) by TechNobre</Copyright>
 
     <Description>Extensions to standardize ResponseType attributes with ProblemDetails</Description>
-    <PackageReleaseNotes>https://github.com/TechNobre/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes/blob/main/CHANGELOG.md</PackageReleaseNotes>
     <Summary>Extensions to standardize ResponseType attributes with ProblemDetails</Summary>
     <PackageTags>PowerUtils;Utils;Helpers;Attributes;ResponseTypes;Extension;Extensions;AspNetCore;ProblemDetails</PackageTags>
-    <RepositoryUrl>https://github.com/TechNobre/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes</RepositoryUrl>
     <PackageProjectUrl>https://github.com/TechNobre/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes</PackageProjectUrl>
     <NeutralLanguage>en-GB</NeutralLanguage>
 
-    <PackageOutputPath>bin\</PackageOutputPath>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/TechNobre/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes</RepositoryUrl>
   </PropertyGroup>
 
 
@@ -45,26 +52,15 @@
   </PropertyGroup>
 
 
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>none</DebugType>
-    <Optimize>true</Optimize>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>none</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-
-
+  <!-- Tests -->
   <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>$(AssemblyName).Tests</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+
+  <ItemGroup Condition="'$(Configuration)'=='Release'">
     <None Include="..\LICENSE" Pack="true" PackagePath="" />
   </ItemGroup>
 
