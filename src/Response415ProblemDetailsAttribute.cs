@@ -9,6 +9,6 @@ namespace PowerUtils.AspNetCore.Attributes
     /// </summary>
     public class Response415ProblemDetailsAttribute : ProducesResponseTypeAttribute
     {
-        public Response415ProblemDetailsAttribute() : base(typeof(ProblemDetailsResponse), StatusCodes.Status415UnsupportedMediaType) { }
+        public Response415ProblemDetailsAttribute() : base(typeof(ErrorProblemDetails), StatusCodes.Status415UnsupportedMediaType) { }
     }
 }

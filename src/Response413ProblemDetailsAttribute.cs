@@ -9,6 +9,6 @@ namespace PowerUtils.AspNetCore.Attributes
     /// </summary>
     public class Response413ProblemDetailsAttribute : ProducesResponseTypeAttribute
     {
-        public Response413ProblemDetailsAttribute() : base(typeof(ProblemDetailsResponse), StatusCodes.Status413PayloadTooLarge) { }
+        public Response413ProblemDetailsAttribute() : base(typeof(ErrorProblemDetails), StatusCodes.Status413PayloadTooLarge) { }
     }
 }

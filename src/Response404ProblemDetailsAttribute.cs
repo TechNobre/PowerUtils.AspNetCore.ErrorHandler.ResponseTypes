@@ -9,6 +9,6 @@ namespace PowerUtils.AspNetCore.Attributes
     /// </summary>
     public class Response404ProblemDetailsAttribute : ProducesResponseTypeAttribute
     {
-        public Response404ProblemDetailsAttribute() : base(typeof(ProblemDetailsResponse), StatusCodes.Status404NotFound) { }
+        public Response404ProblemDetailsAttribute() : base(typeof(ErrorProblemDetails), StatusCodes.Status404NotFound) { }
     }
 }
