@@ -9,6 +9,6 @@ namespace PowerUtils.AspNetCore.Attributes
     /// </summary>
     public class Response409ProblemDetailsAttribute : ProducesResponseTypeAttribute
     {
-        public Response409ProblemDetailsAttribute() : base(typeof(ProblemDetailsResponse), StatusCodes.Status409Conflict) { }
+        public Response409ProblemDetailsAttribute() : base(typeof(ErrorProblemDetails), StatusCodes.Status409Conflict) { }
     }
 }

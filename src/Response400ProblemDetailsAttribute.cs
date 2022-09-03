@@ -9,6 +9,6 @@ namespace PowerUtils.AspNetCore.Attributes
     /// </summary>
     public class Response400ProblemDetailsAttribute : ProducesResponseTypeAttribute
     {
-        public Response400ProblemDetailsAttribute() : base(typeof(ProblemDetailsResponse), StatusCodes.Status400BadRequest) { }
+        public Response400ProblemDetailsAttribute() : base(typeof(ErrorProblemDetails), StatusCodes.Status400BadRequest) { }
     }
 }

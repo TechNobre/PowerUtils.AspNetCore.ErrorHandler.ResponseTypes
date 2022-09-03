@@ -9,6 +9,6 @@ namespace PowerUtils.AspNetCore.Attributes
     /// </summary>
     public class Response401ProblemDetailsAttribute : ProducesResponseTypeAttribute
     {
-        public Response401ProblemDetailsAttribute() : base(typeof(ProblemDetailsResponse), StatusCodes.Status401Unauthorized) { }
+        public Response401ProblemDetailsAttribute() : base(typeof(ErrorProblemDetails), StatusCodes.Status401Unauthorized) { }
     }
 }

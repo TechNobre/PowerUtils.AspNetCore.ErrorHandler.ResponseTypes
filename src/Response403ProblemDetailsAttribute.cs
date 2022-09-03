@@ -9,6 +9,6 @@ namespace PowerUtils.AspNetCore.Attributes
     /// </summary>
     public class Response403ProblemDetailsAttribute : ProducesResponseTypeAttribute
     {
-        public Response403ProblemDetailsAttribute() : base(typeof(ProblemDetailsResponse), StatusCodes.Status403Forbidden) { }
+        public Response403ProblemDetailsAttribute() : base(typeof(ErrorProblemDetails), StatusCodes.Status403Forbidden) { }
     }
 }

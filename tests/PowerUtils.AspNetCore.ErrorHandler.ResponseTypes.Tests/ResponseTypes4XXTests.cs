@@ -18,7 +18,7 @@ namespace PowerUtils.AspNetCore.ErrorHandler.ResponseTypes.Tests
                 .Be(400);
 
             act.Type.Should()
-                .Be(typeof(ProblemDetailsResponse));
+                .Be(typeof(ErrorProblemDetails));
         }
 
         [Fact]
@@ -33,7 +33,7 @@ namespace PowerUtils.AspNetCore.ErrorHandler.ResponseTypes.Tests
                 .Be(401);
 
             act.Type.Should()
-                .Be(typeof(ProblemDetailsResponse));
+                .Be(typeof(ErrorProblemDetails));
         }
 
         [Fact]
@@ -48,7 +48,7 @@ namespace PowerUtils.AspNetCore.ErrorHandler.ResponseTypes.Tests
                 .Be(403);
 
             act.Type.Should()
-                .Be(typeof(ProblemDetailsResponse));
+                .Be(typeof(ErrorProblemDetails));
         }
 
         [Fact]
@@ -63,7 +63,7 @@ namespace PowerUtils.AspNetCore.ErrorHandler.ResponseTypes.Tests
                 .Be(404);
 
             act.Type.Should()
-                .Be(typeof(ProblemDetailsResponse));
+                .Be(typeof(ErrorProblemDetails));
         }
 
         [Fact]
@@ -78,7 +78,7 @@ namespace PowerUtils.AspNetCore.ErrorHandler.ResponseTypes.Tests
                 .Be(409);
 
             act.Type.Should()
-                .Be(typeof(ProblemDetailsResponse));
+                .Be(typeof(ErrorProblemDetails));
         }
 
         [Fact]
@@ -93,7 +93,7 @@ namespace PowerUtils.AspNetCore.ErrorHandler.ResponseTypes.Tests
                 .Be(413);
 
             act.Type.Should()
-                .Be(typeof(ProblemDetailsResponse));
+                .Be(typeof(ErrorProblemDetails));
         }
 
         [Fact]
@@ -108,7 +108,7 @@ namespace PowerUtils.AspNetCore.ErrorHandler.ResponseTypes.Tests
                 .Be(415);
 
             act.Type.Should()
-                .Be(typeof(ProblemDetailsResponse));
+                .Be(typeof(ErrorProblemDetails));
         }
     }
 }
