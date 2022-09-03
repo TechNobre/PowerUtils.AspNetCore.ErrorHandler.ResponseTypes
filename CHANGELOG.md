@@ -1,3 +1,20 @@
+# [2.0.0](https://github.com/TechNobre/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes/compare/v1.1.0...v2.0.0) (2022-09-03)
+
+
+### Build System
+
+* **nuget:** Update dependencies ([c8513b1](https://github.com/TechNobre/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes/commit/c8513b16d13a8ccc32a1276380896f95ccdb09fc))
+
+
+### Features
+
+* Add support to debug in runtime `Microsoft.SourceLink.GitHub` ([5ca159b](https://github.com/TechNobre/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes/commit/5ca159bd99a6b3fe9c89afe0f734db84ebb5edf5))
+
+
+### BREAKING CHANGES
+
+* **nuget:** Removed support for `.NET 3.1`
+
 # [1.1.0](https://github.com/TechNobre/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes/compare/v1.0.0...v1.1.0) (2022-05-29)
 
 
