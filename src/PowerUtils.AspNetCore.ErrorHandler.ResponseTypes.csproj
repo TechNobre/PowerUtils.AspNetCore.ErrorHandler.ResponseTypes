@@ -86,5 +86,19 @@
     <PackageReference Include="PowerUtils.AspNetCore.ErrorHandler" Version="2.2.1" />
   </ItemGroup>
 
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net5.0' ">
+    <!-- To solve vulnerability issues -->
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Text.Encodings.Web" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net6.0' ">
+    <!-- To solve vulnerability issues -->
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Text.Encodings.Web" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.0" />
+  </ItemGroup>
+
 
 </Project>
