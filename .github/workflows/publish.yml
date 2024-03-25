@@ -13,7 +13,7 @@ on:
 
 
 env:
-  SDK_VERSION: '6.0.400'
+  SDK_VERSION: '6.0.420'
   PACKAGE_PATH: ./src/**/*.nupkg
   NUGET_SERVER: https://api.nuget.org/v3/index.json
 
@@ -40,7 +40,7 @@ jobs:
 
     - name: Semantic Release
       id: 'semantic-release'
-      uses: cycjimmy/semantic-release-action@v4.0.0
+      uses: cycjimmy/semantic-release-action@v4.1.0
       with:
         semantic_version: 21.1.1
         extra_plugins: |
