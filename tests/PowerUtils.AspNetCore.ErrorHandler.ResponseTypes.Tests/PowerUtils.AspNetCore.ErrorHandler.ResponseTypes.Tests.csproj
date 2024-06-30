@@ -11,6 +11,7 @@
 
 
   <PropertyGroup>
+    <VSTestLogger>trx%3bLogFileName=$(MSBuildProjectName)_$(TargetFramework).trx</VSTestLogger>
     <DefaultItemExcludes>$(DefaultItemExcludes);coverage.*opencover.xml</DefaultItemExcludes>
   </PropertyGroup>
 
