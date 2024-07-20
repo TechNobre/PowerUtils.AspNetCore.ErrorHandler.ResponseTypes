@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/TechNobre/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes/compare/v2.0.0...v2.1.0) (2024-07-20)
+
+
+### Features
+
+* Added support to .NET8, .NET7 ([22b9cfe](https://github.com/TechNobre/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes/commit/22b9cfe6b03bbdeaeb94ffe60cd4f57fe9af692f))
+
 # [2.0.0](https://github.com/TechNobre/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes/compare/v1.1.0...v2.0.0) (2022-09-03)
 
 
