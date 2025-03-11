@@ -89,7 +89,7 @@
   <ItemGroup>
     <!-- To solve vulnerability issues -->
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="System.Text.Encodings.Web" Version="9.0.2" />
+    <PackageReference Include="System.Text.Encodings.Web" Version="9.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.3.0" />
   </ItemGroup>
 
