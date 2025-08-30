@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/TechNobre/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes/compare/v2.2.0...v3.0.0) (2025-08-30)
+
+
+### Bug Fixes
+
+* Marked all implementations as `Obsolete` ([32699b9](https://github.com/TechNobre/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes/commit/32699b9c0aa03146ae152dc22ccc28c5151db921))
+
+
+### BREAKING CHANGES
+
+* Deprecated package
+
 # [2.2.0](https://github.com/TechNobre/PowerUtils.AspNetCore.ErrorHandler.ResponseTypes/compare/v2.1.0...v2.2.0) (2024-11-13)
 
 
